@@ -4,10 +4,10 @@ import java.util.List;
 
 public interface TradesmanService {
 
-    public List<Tradesman> getAllTradesman();
-    public Tradesman getTradesmanById(int tradesmanId);
-    public Tradesman addOrUpdateTradesman(Tradesman tradesman);
-    public Tradesman deleteTradesmanTradesman(int tradesmanId) throws Exception;
+     List<Tradesman> getAllTradesman();
+     Tradesman getTradesmanById(int tradesmanId);
+     Tradesman addOrUpdateTradesman(Tradesman tradesman);
+     Tradesman deleteTradesmanTradesman(int tradesmanId) throws Exception;
 
 
 }
