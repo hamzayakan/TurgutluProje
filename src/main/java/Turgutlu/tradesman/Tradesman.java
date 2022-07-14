@@ -10,25 +10,21 @@ import javax.persistence.Table;
 import com.sun.istack.NotNull;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 @Entity
+@Table(name = "tradesman")
 @Data
-@Table(name="tradesmans")
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Tradesman {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private int id;
 
-    @Column(name="email")
-
-    @NotNull
-    private String email;
-
-    @Column(name="password")
-    @NotNull
-    private String password;
+    @Column(name="name")
+    private String name;
 }
